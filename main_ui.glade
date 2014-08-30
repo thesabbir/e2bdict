@@ -9,12 +9,12 @@
     <property name="type_hint">dialog</property>
     <property name="program_name">E2BDICT</property>
     <property name="version">0.1</property>
-    <property name="copyright" translatable="yes">Copyright by Sabbir Ahmed 2014</property>
+    <property name="copyright" translatable="yes">Copyright by Sabbir Ahmed</property>
     <property name="website">http://github.com/thesabbir/e2bdict</property>
-    <property name="website_label" translatable="yes">GitHub Repo</property>
+    <property name="website_label" translatable="yes">GitHub Repository</property>
     <property name="authors">Sabbir Ahmed &lt;alreadysabbir@live.com&gt;</property>
     <property name="logo_icon_name">help-about</property>
-    <property name="license_type">lgpl-2-1</property>
+    <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="aboutdialog-vbox1">
         <property name="can_focus">False</property>
