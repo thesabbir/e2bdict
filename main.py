@@ -10,11 +10,11 @@ sql = connection.cursor()
 
 def eng2bn(word):
     # FETCHING INDEX
-    sql.execute('SELECT * FROM eng WHERE word=?', (word.upper(),))
+    sql.execute('SELECT * FROM english WHERE word=?', (word.upper(),))
     try:
         bn_index = sql.fetchone()[0]
         # FETCHING MEANING
-        sql.execute('SELECT * FROM other WHERE serial=?', (bn_index,))
+        sql.execute('SELECT * FROM bengali WHERE serial=?', (bn_index,))
         meaning = sql.fetchone()[1]
         return meaning
     except TypeError:
