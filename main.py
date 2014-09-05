@@ -24,7 +24,7 @@ def eng2bn(word):
 class DictGui:
     def __init__(self):
         builder = Gtk.Builder()
-        builder.add_from_file("main_ui.glade")
+        builder.add_from_file("ui.glade")
         self.window = builder.get_object("main_window")
         self.search_en = builder.get_object("search_en")
         self.result_view = builder.get_object("result_lab")
