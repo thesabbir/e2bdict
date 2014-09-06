@@ -19,3 +19,7 @@ say.
 * Automated installation.
 * Bangla to English support.
 * Search suggestions.
+
+
+##LICENSE
+[GNU GPL v3] (http://www.gnu.org/licenses/gpl-3.0.html)
