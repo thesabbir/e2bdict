@@ -7,13 +7,13 @@
     <property name="title" translatable="yes">About</property>
     <property name="window_position">center</property>
     <property name="type_hint">dialog</property>
-    <property name="program_name">E2BDICT</property>
-    <property name="version">0.1</property>
-    <property name="copyright" translatable="yes">Copyright by Sabbir Ahmed</property>
+    <property name="program_name">বাংলা অভিধান</property>
+    <property name="version">0.2-a</property>
+    <property name="copyright" translatable="yes">সাব্বির আহম্মেদ এবং অনুবাদকদের দ্বারা কপিরাইট সংরক্ষিত</property>
     <property name="website">http://github.com/thesabbir/e2bdict</property>
-    <property name="website_label" translatable="yes">GitHub Repository</property>
+    <property name="website_label" translatable="yes">গিটহাব রিপোসিটোরী</property>
     <property name="authors">Sabbir Ahmed &lt;alreadysabbir@live.com&gt;</property>
-    <property name="logo_icon_name">help-about</property>
+    <property name="logo_icon_name">accessories-dictionary</property>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="aboutdialog-vbox1">
@@ -40,29 +40,27 @@
   </object>
   <object class="GtkWindow" id="main_window">
     <property name="width_request">350</property>
-    <property name="height_request">50</property>
+    <property name="height_request">3</property>
     <property name="can_focus">False</property>
-    <property name="margin_top">2</property>
-    <property name="margin_bottom">2</property>
     <property name="title" translatable="yes">বাংলা অভিধান</property>
     <property name="resizable">False</property>
     <property name="window_position">center-always</property>
     <property name="icon_name">accessories-dictionary</property>
-    <property name="type_hint">dialog</property>
+    <property name="type_hint">menu</property>
     <property name="has_resize_grip">False</property>
     <child>
       <object class="GtkBox" id="box1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="margin_left">4</property>
+        <property name="margin_right">4</property>
+        <property name="margin_top">4</property>
+        <property name="margin_bottom">4</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkBox" id="box2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">5</property>
-            <property name="margin_right">5</property>
-            <property name="margin_top">3</property>
-            <property name="margin_bottom">6</property>
             <property name="vexpand">True</property>
             <property name="orientation">vertical</property>
             <child>
@@ -110,6 +108,62 @@
           </object>
           <packing>
             <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolbar" id="toolbar1">
+            <property name="height_request">10</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon_size">1</property>
+            <child>
+              <object class="GtkToolButton" id="btn_about">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">এই অভিধান সম্পর্কে জানুন...</property>
+                <property name="label" translatable="yes">toolbutton1</property>
+                <property name="use_underline">True</property>
+                <property name="stock_id">gtk-about</property>
+                <signal name="clicked" handler="show_about" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="btn_pref">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">সেটিংস সমূহ</property>
+                <property name="label" translatable="yes">toolbutton1</property>
+                <property name="use_underline">True</property>
+                <property name="stock_id">gtk-preferences</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="btn_add_words">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">নতুন শব্দ যুক্ত করুন...</property>
+                <property name="label" translatable="yes">toolbutton1</property>
+                <property name="use_underline">True</property>
+                <property name="stock_id">gtk-add</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">1</property>
           </packing>
