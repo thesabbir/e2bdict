@@ -90,6 +90,7 @@
             </child>
             <child>
               <object class="GtkLabel" id="result_lab">
+                <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">10</property>

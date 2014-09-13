@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 
 from gi.repository import Gtk, GObject
 import sqlite3
@@ -18,7 +19,7 @@ def eng2bn(word):
         meaning = sql.fetchone()[1]
         return meaning
     except TypeError:
-        return "Nothing found!"
+        return "শব্দটি পাওয়া যায়নি!"
 
 
 class DictGui:
