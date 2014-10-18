@@ -1,25 +1,9 @@
 ##E2bdict
-English to Bengali dictionary using GTK3 and PYTHON for Linux.
+=======
 
-##How to run
-Clone the repository and run `main.py`. Make sure it's excutable.
-
-##Testing required !
-
-This dictionary is only tested on ubuntu. Please open an issue if you are
-having any problem running on your disto.
+English to Bengali dictionary using GTK3 and PYTHON
 
 
-##Contribution
+##Contribute
 
-Please fork and send a pull request or open an issue for anything you have to
-say.
-
-##TODOS:
-* Automated installation.
-* Bangla to English support.
-* Search suggestions.
-
-
-##LICENSE
-[GNU GPL v3] (http://www.gnu.org/licenses/gpl-3.0.html)
+Please fork and send a pull request. We want a better one :)

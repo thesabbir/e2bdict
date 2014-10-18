@@ -29,7 +29,13 @@ class DictGui:
         self.window = builder.get_object("main_window")
         self.search_en = builder.get_object("search_en")
         self.result_view = builder.get_object("result_lab")
+        self.mnu_about = builder.get_object("mnu_about")
+        self.about_dialog = builder.get_object("aboutdialog")
         builder.connect_signals(self)
+
+    def show_about(self, about):
+        abt = self.about_dialog.run()
+        self.about_dialog.hide()
 
     def on_search_activate(self, search_en):
         # Main Event Handler
