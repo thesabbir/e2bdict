@@ -8,8 +8,10 @@ English to Bengali dictionary using GTK3 and PYTHON.
 
 
 ##Setup
-Download [E2Bdicti-0.2-a](https://github.com/thesabbir/e2bdict/archive/0.2-a.zip)
+Download [E2Bdicti-0.2-a](https://github.com/thesabbir/e2bdict/archive/0.2-a.zip).
+
 Extract the archive.
+
 Run `main.py`
 
 ##Contribution
